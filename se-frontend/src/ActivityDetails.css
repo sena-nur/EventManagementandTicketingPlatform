@@ -1,0 +1,295 @@
+.nav-and-search {
+  text-align: center;
+  position: relative;
+}
+
+.general-content-container {
+  text-align: left;
+  margin-bottom: 1.2rem;
+  padding: 1.6rem 2rem;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+.main-heading {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.type {
+  opacity: 80%;
+}
+
+.tickets-and-artists {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+.btn-tickets,
+.btn-artists,
+.btn-favorites {
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+  border: none;
+  transition: 0.3s all;
+}
+
+.btn-tickets:hover,
+.btn-artists:hover,
+.btn-favorites:hover {
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.btn-tickets {
+  background-color: rgba(74, 238, 74, 0.603);
+}
+
+.btn-artists {
+  background-color: rgba(228, 79, 79, 0.836);
+}
+
+.btn-favorites {
+  color: #fff;
+  font-weight: 700;
+  background-color: rgb(224, 146, 1);
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.main-content {
+  position: relative;
+}
+
+.buy-and-date-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.buy-and-date-grid h4 {
+  font-size: 1.4rem;
+}
+
+.buy-and-date-grid h5 {
+  margin-right: 2rem;
+  opacity: 0.8;
+  font-size: 1.2rem;
+}
+
+.buy-content-inside {
+  transition: 0.3s all ease;
+  position: relative;
+  border: 0.1px solid rgba(0, 0, 0, 0.15);
+  padding: 1rem 1rem 3rem 1rem;
+  border-radius: 1rem;
+}
+
+.buy-content-inside:hover {
+  cursor: pointer;
+  border: 1px solid rgba(39, 172, 39, 0.849);
+  background-color: rgba(39, 172, 39, 0.149);
+}
+
+.buy-content-inside h5 {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 0.6rem;
+}
+
+.buy-content-inside p {
+  margin-bottom: 1rem;
+}
+
+.price-container {
+  top: 1rem;
+  right: 1rem;
+  position: absolute;
+}
+
+.btn-buy {
+  color: #fff;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border-bottom-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(39, 172, 39, 0.849);
+}
+
+.artists {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.artist-img {
+  border-radius: 1rem;
+  width: 150px;
+  height: 150px;
+}
+
+.artist-content {
+  margin-bottom: 5rem;
+  padding-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.img-and-artist {
+  background-color: #e5e5e5;
+  width: 150px;
+  border-radius: 1rem;
+}
+
+.artist-name {
+  padding-bottom: 1rem;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  width: 150px;
+}
+
+.address-heading {
+  margin-top: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.address-container {
+  margin-bottom: 1rem;
+}
+
+.btn-location-div {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-location,
+.btn-address-review {
+  border: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.5rem;
+  transition: 0.3s all ease;
+}
+
+.btn-location {
+  background-color: rgba(39, 172, 39, 0.949);
+  color: #fff;
+}
+
+.btn-address-review {
+  background-color: rgba(245, 89, 89, 0.936);
+  color: #fff;
+}
+
+.btn-location:hover {
+  font-weight: bold;
+  background-color: #fff;
+  color: rgba(39, 172, 39, 0.949);
+  box-shadow: 1px 1px 10px 1px rgba(39, 172, 39, 0.949);
+  cursor: pointer;
+}
+
+.btn-address-review:hover {
+  font-weight: bold;
+  background-color: #fff;
+  color: rgba(245, 89, 89, 0.936);
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 1px rgba(245, 89, 89, 0.936);
+}
+
+.details-container {
+  line-height: 1.5rem;
+  color: rgb(20, 20, 20);
+  margin-top: 2rem;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.search-input {
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: -10px;
+  border: none;
+  background-color: #f5f5f5;
+  box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search-container {
+  display: inline-block;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  bottom: -12px;
+  color: black;
+  right: -330px;
+  top: -22px;
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px !important;
+}
+
+.grid-main {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  padding: 0rem 1rem;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1700px) {
+  /* Örnek stil değişikliği */
+  .grid-main {
+    gap: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  /* Örnek stil değişikliği */
+  .grid-main {
+    gap: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  /* Örnek stil değişikliği */
+  .grid-main {
+    gap: 1.6rem;
+  }
+}
+
+.img-detail {
+  border-radius: 1rem;
+  width: 225px;
+  margin-top: 0rem;
+}
+
+.detail-content {
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+.main-content h1 {
+}

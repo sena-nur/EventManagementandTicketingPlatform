@@ -1,0 +1,53 @@
+*,*::before,*::after{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1280px;
+  margin: auto;
+}
+
+.navbar{
+  padding: 1.4rem 1.6rem;
+  box-shadow: 1px 1px 10px 1px rgba(11,156,49,0.8);
+  background-image: linear-gradient(to top, rgba(11,156,49,0.8), rgba(11,156,49,0.1));
+}
+
+.navbar .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-logo{
+  width: 16rem;
+  height: auto;
+}
+
+a:hover{
+  cursor: pointer;
+  color: #231a69;
+  text-decoration: underline;
+}
+
+.main-logo{
+  cursor: pointer;
+}
+
+a{
+  transition: 0.3s all ease;
+  font-weight: 700;
+  text-decoration: none;
+  color: #483D8B;
+}
+
+.nav-right-container{
+  align-items: center;
+  text-align: center;
+  gap:2rem;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+

@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-image: url("/public/party.jpg");
+  /* Resmin dosya yolunu buraya ekleyin */
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); /* Sadece arka plan resmi için bulanıklık efekti */
+}
+
+.background-darkness {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Karanlık arka plan için opaklık */
+  z-index: -1;
+}
+
+.plate-side {
+  width: 100%;
+}
+
+.container-all {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+}
+
+.city-container {
+  padding: 0.4rem 2rem;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1.2rem;
+  margin: 0.4rem;
+}
+
+.city {
+  font-size: 1rem;
+}
+
+.city-and-plate {
+  text-align: center;
+  align-items: center;
+
+  width: 100%;
+  color: #fff;
+  border-radius: 1rem;
+  border: 0px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 3px 2px rgba(255, 255, 255, 0.3);
+  transition: 0.3s all ease;
+  padding: 1.3rem 0.4rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Karanlık arka plan için opaklık */
+}
+
+.city-and-plate:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.city-container-inside {
+  text-align: center;
+  align-items: center;
+}
+
+.city-container-inside {
+}
+
+.plate-container {
+  color: black;
+  display: inline-block;
+  margin-top: 0.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  padding: 0.3rem;
+}
+
+@media screen and (max-width: 1200px) {
+  /* Örnek stil değişikliği */
+  .container-all {
+    grid-template-columns: 1fr;
+  }
+  .create-event-btn {
+    margin-bottom: 2rem;
+  }
+  .search-input-left {
+    margin-bottom: -2rem;
+  }
+}
+
+.search-input-left {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 5rem;
+  border-radius: 0.4rem;
+  border: 1px solid white;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+.create-event-btn {
+  transition: 0.3s all ease;
+  color: black;
+  font-size: 1.2rem;
+  margin-top: 5rem;
+  border-radius: 0.4rem;
+  border: 1px solid black;
+  background: transparent;
+  background-color: rgba(255, 255, 255, 0.7);
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+.search-side {
+  align-items: center;
+  text-align: center;
+}
+
+.create-event-btn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.modal-inside {
+  padding-top: 7rem;
+  height: 100vh;
+  text-align: center;
+}
+
+.modal-inside--inside {
+  position: relative;
+  box-shadow: 1px 1px 15px 10px rgba(255, 255, 255, 0.9);
+  display: inline-block;
+  padding: 2rem 4rem;
+}
+
+.modal-inside li {
+  list-style: none;
+  border: none;
+  margin-top: 1rem;
+}
+
+.modal-inside li input {
+  padding: 0.9rem 2rem;
+  border-radius: 0.3rem;
+  border: none;
+  box-shadow: 1px 1px 4px 1px rgba(255, 255, 255, 0.9);
+  background-color: transparent;
+}
+
+.modal-inside li input::placeholder {
+  color: #fff; /* Renk */
+  font-size: 1.2rem; /* Yazı stilini italik yapma */
+}
+
+.event-btn {
+  font-size: 1.2rem;
+  padding: 0.7rem 2rem;
+  margin-top: 3rem;
+  border: none;
+  background-color: white;
+  border-radius: 4px;
+  transition: 0.3s all;
+}
+
+.event-btn:hover {
+  cursor: pointer;
+  background-color: #eee;
+  box-shadow: 1px 1px 6px 3px rgba(255, 255, 255, 0.9);
+}
+
+.close-btn {
+  padding: 0.5rem;
+  position: absolute;
+  top: 15px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 50%;
+  right: 20px;
+  transition: 0.3s all ease;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  border: 1px solid white;
+}

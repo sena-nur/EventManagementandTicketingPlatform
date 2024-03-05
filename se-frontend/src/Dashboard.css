@@ -1,0 +1,170 @@
+body{
+    background-color: white;
+    overflow: auto !important;
+}
+
+
+.search-container {
+    text-align: center;
+    top: 50px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1; /* İstediğin boşluğa göre ayarlayabilirsin */
+}
+
+.search-input {
+  align-items: center;
+    padding: 15px;
+    width: 700px; /* veya istediğin genişliği belirleyebilirsin */
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.city-container{
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+
+.city-btn {
+  position: relative;
+  left: 1000px;
+  top: 17px;
+  align-items: center;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 13.5px 20px;
+  width: 150px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #b82828;
+  transition: background-color 0.3s, color 0.3s; /* Geçiş efektleri ekleyelim */
+}
+
+
+.city-btn:hover{
+  border: 1px solid #b82828;
+  cursor: pointer;
+  color: white;
+  background-color: #b82828;
+}
+
+
+
+
+  .gif-image {
+    width: 100vw; /* Gif'in yatayda tüm ekranı kaplamasını sağlar */
+    height: 250px; /* Yüksekliği istediğiniz boyuta küçültür */
+    display: block; /* Diğer içeriklerle uyumlu olması için */
+    object-fit: cover; /* Görüntünün oranlarını korumasını sağlar */
+    position: relative; /* Diğer içeriklere göre konumlandırma yapmak için */
+    top: -70px; /* Search barın altında biraz üstte olacak şekilde ayarla */
+    left: 50%; /* Görüntüyü yatayda ortalar */
+    transform: translateX(-50%); /* Görüntüyü yatayda tam ortaya hizalar */
+    z-index: 0; /* Search barın altında olmasını sağlar */
+  }
+  
+  .gif-container {
+    position: relative;
+  }
+  
+  .categories {
+    text-align: center;
+    position: absolute;
+    bottom: calc(100% + -225px); /* Gif containerının üstünde bir boşluk bırakacak şekilde ayarla */
+    left: 50%; /* Ortalamak için */
+    transform: translateX(-50%);
+    width: 100%; /* Genişlik ayarı */
+  }
+  
+  .category-navbar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .category-button {
+    width: 20%;
+    padding: 35px 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: #b82828;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-button:hover {
+    background-color: #d43e3e;
+    cursor: pointer;
+  }
+
+  .event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .event-item.selected {
+    border: 2px solid blue; /* Örnek bir seçili kenarlık */
+}
+  
+.event-name-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Kutu arka plan rengi */
+    color: white; /* Kutu içeriği rengi */
+    padding: 5px; /* Kutu içeriğiyle kenarlık arasındaki boşluk */
+    border-radius: 5px; /* Köşelerin yuvarlatılması */
+    margin-top: -25px; /* Event adının resmin üstüne gelmesi için ayar */
+    text-align: center; /* Metni ortalamak */
+}
+.event-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.event-item img {
+    width: 100%; /* Resmi genişliği 100% yaparak event-item içinde genişletir */
+    object-fit: cover; /* Resmin oranını korurken taşması durumunda kırpma yapar */
+}
+
+.event-details {
+    padding: 10px;
+}
+
+@media screen and (max-width: 1500px) {
+  .city-btn {
+    left: 1000px;
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+  .city-btn {
+    width: 130px;
+    left: 900px;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+  .city-btn {
+    width: 110px;
+    left: 850px;
+    }
+}
+
+@media screen and (max-width: 975px) {
+  .city-btn {
+    width: 100px;
+    left: 800px;
+    }
+}
+
+@media screen and (max-width: 925px) {
+  .city-btn {
+    width: 90px;
+    left: 750px;
+    }
+}

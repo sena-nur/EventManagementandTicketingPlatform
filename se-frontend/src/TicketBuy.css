@@ -1,0 +1,364 @@
+/* Container ve içindeki elemanların genel ayarları */
+body {
+  background-color: rgba(5, 69, 153, 0.05);
+}
+.container-ticket {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.2rem 3rem;
+  font-family: Arial, sans-serif;
+  max-width: 1300px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  p {
+    letter-spacing: 1px;
+  }
+  /* Örnek stil değişikliği */
+  .container-ticket {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex-column {
+    width: 100% !important;
+    align-items: center;
+  }
+
+  .flex-heading-p {
+    width: 100% !important;
+  }
+
+  .main-buy-container {
+    width: 100% !important;
+  }
+
+  .requirments-container {
+    width: 100% !important;
+    margin-bottom: 4rem;
+  }
+  .sitting-plan-container {
+    width: 50% !important;
+    padding: 0px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 6rem;
+  }
+}
+
+.flex-heading-p {
+  margin-bottom: 2rem;
+  width: 70%;
+  text-align: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+/* Ana alışveriş içeriği */
+.main-buy-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  display: block;
+  width: 80%;
+}
+
+.heading-and-location {
+  text-align: center;
+  color: #3788df;
+}
+
+.heading-and-location h2 {
+  font-size: 1.7em;
+  color: rgb(5, 69, 153);
+  margin-bottom: 8px;
+}
+
+.main-container-inside {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Kategori ve biletlerin genel düzeni */
+.cathegory-and-ticket {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Genel ve özel konteynerlerin düzeni */
+.general-container,
+.special-container {
+  position: relative;
+  border: 0.1px solid rgba(5, 69, 153, 0.2);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+/* Özel durumda kenarlık ve arkaplan rengini değiştirme */
+
+/* Eğer gerekirse hover efekti ekleyebiliriz */
+.general-container:hover,
+.special-container:hover {
+  transition: 0.3s all;
+  cursor: pointer;
+  border-color: rgb(5, 69, 153);
+  /* Örnek olarak hover durumunda kenar rengini değiştirelim */
+  background-color: rgba(5, 69, 153, 0.2);
+  /* Hover durumunda arkaplan rengini ayarlayalım */
+}
+
+/* Sol ve sağ içeriklerin düzeni */
+.general-left,
+.special-left {
+  flex: 1;
+}
+
+.general-right,
+.special-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1;
+}
+
+/* Genel ve özel butonlar */
+.buy-btn-general,
+.buy-btn-special {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.buy-btn-general:hover,
+.buy-btn-special:hover {
+  background-color: #0056b3;
+}
+
+/* Gereksinimler */
+.requirments-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  display: block;
+  width: 80%;
+  margin-top: 4rem;
+}
+
+.requirments-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.requirments-container ul li {
+  margin-bottom: 8px;
+}
+
+/* Oturma planı konteyneri */
+.sitting-plan-container {
+  width: 35%;
+  padding: 0px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.sitting-plan-inside h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.sitting-plan-inside p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.sitting-img-container img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.modal-ticket {
+  z-index: 1000;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  background-image: url("/public/party.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.hundred {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.modal-inside-ticket {
+  padding-top: 7rem;
+  height: 100vh;
+  text-align: center;
+}
+
+.img-and-heading {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+.img-and-heading h5 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.heading-date-location-container p {
+  font-size: 0.9rem;
+}
+
+.modal-inside-ticket img {
+  text-align: left;
+  width: 150px;
+  height: 150px;
+  border-radius: 1rem;
+}
+
+.modal-inside--inside-ticket {
+  margin-top: 4rem;
+  min-width: 45rem;
+  border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.92);
+  position: relative;
+  box-shadow: 1px 1px 15px 10px rgba(255, 255, 255, 0.9);
+  display: inline-block;
+  padding: 2rem 4rem;
+}
+
+.modal-inside-ticket li {
+  list-style: none;
+  border: none;
+  margin-top: 1rem;
+}
+
+.modal-inside-ticket li input {
+  padding: 0.9rem 2rem;
+  border-radius: 0.3rem;
+  border: none;
+  box-shadow: 1px 1px 4px 1px rgba(255, 255, 255, 0.9);
+  background-color: transparent;
+}
+
+.modal-inside-ticket li input::placeholder {
+  color: #fff; /* Renk */
+  font-size: 1.2rem; /* Yazı stilini italik yapma */
+}
+
+.event-btn {
+  font-size: 1.2rem;
+  padding: 0.7rem 2rem;
+  margin-top: 3rem;
+  border: none;
+  background-color: white;
+  border-radius: 4px;
+  transition: 0.3s all;
+}
+
+.event-btn:hover {
+  cursor: pointer;
+  background-color: #eee;
+  box-shadow: 1px 1px 6px 3px rgba(255, 255, 255, 0.9);
+}
+
+.close-btn {
+  padding: 0.5rem;
+  position: absolute;
+  top: 15px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 50%;
+  right: 20px;
+  transition: 0.3s all ease;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  border: 1px solid white;
+}
+
+.prices-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.choose-person {
+  margin-bottom: 40px;
+}
+.person-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.person-counter button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.person-counter button:focus {
+  outline: none;
+}
+
+.person-counter h3 {
+  font-size: 24px;
+  margin: 0 20px;
+}
+
+.person-counter button:hover {
+  background-color: #0056b3;
+}
+
+.buy-container-ticket {
+  margin-top: -25px;
+  margin-bottom: 25px;
+}
